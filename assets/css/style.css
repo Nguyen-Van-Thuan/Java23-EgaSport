@@ -1,0 +1,122 @@
+/* Reset browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Header./Start */
+.header-top {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header-top a {
+    color: #fff;
+    text-decoration: none;
+}
+.header-top .button-close i {
+    position: absolute;
+
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    font-size: 25px; 
+}
+
+.wrap-menu {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo */
+.header-bottom .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-bottom .logo img {
+    width: 134px;
+    object-fit: cover;
+}
+
+/* Menu */
+.header-bottom .menu-main ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-bottom .menu-main ul li {
+    list-style: none;
+    margin-right: 25px;
+}
+.header-bottom .menu-main ul li:last-child {
+    margin-right: 0;
+}
+.header-bottom .menu-main ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111;
+}
+
+/* Button Menu */
+.header-bottom .button-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button-menu button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /*Bo tron*/
+    border: none; /*Bo vien cai button*/
+    background-color: white;
+    margin-right: 25px;
+    cursor: pointer; /*Chuyen con tro chuot ve ban tay*/
+}
+.button-menu button:hover {
+    background-color: rgba(238, 238, 238, 0.4);
+}
+.button-menu button:last-child {
+    margin-right: 0;
+}
+.button-menu .active {
+    cursor: not-allowed; /* Cam click */
+}
+.button-menu .active:hover {
+    background-color: #fff;
+}
+.button-menu .active i {
+    color: #ddd;
+}
+.button-menu button i {
+    font-size: 18px;
+}
+
+/* User Menu */
+.menu-user ul {
+    display: flex;
+    height: 100%;
+    align-items: center; /*Can giua theo chieu doc*/
+}
+.menu-user ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+.menu-user ul li:last-child {
+    margin-right: 0;
+}
+.menu-user ul li a i {
+    font-size: 23px;
+}
