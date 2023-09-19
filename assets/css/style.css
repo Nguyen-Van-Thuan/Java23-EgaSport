@@ -113,10 +113,25 @@
 .menu-user ul li {
     list-style: none;
     margin-right: 20px;
+    position: relative;
 }
 .menu-user ul li:last-child {
     margin-right: 0;
 }
 .menu-user ul li a i {
     font-size: 23px;
+}
+.menu-user ul li span {
+    width: 25px;
+    height: 25px;
+    background-color: #2C51B0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    right: -10px;
 }
