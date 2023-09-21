@@ -10,6 +10,40 @@
     margin: auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.coloumn {
+    padding: 0 10px;
+}
+
+/* Thong so coloumn */
+.coloumn-2 {
+    width: calc(100% / 2);
+}
+.coloumn-3 {
+    width: calc(100% / 3);
+}
+.coloumn-4 { 
+    width: calc(100% / 4);
+}
+.coloumn-5 {
+    width: calc(100% / 5);
+}
+.coloumn-6 {
+    width: calc(100% / 6);
+}
+
+/* Tao ra content de lam vi du */
+.content {
+    width: 100%;
+    height: 300px;
+    background-color: pink;
+    margin-bottom: 15px;
+}
+
 /* Header./Start */
 .header-top {
     width: 100%;
@@ -134,4 +168,15 @@
     position: absolute;
     top: -10px;
     right: -10px;
+}
+
+
+/* Service Main */
+.service-main {
+    padding: 40px 0;
+}
+
+/* Hot Product */
+.hot-product {
+    padding: 40px 0;
 }
