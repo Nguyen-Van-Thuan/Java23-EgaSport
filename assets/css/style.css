@@ -395,6 +395,7 @@
     height: 65px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Logo */
@@ -620,16 +621,20 @@
     top: -3px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.slider-main .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider-main .owl-dots span {
+    width: 18px!important;
+    height: 5px!important;
+    margin-right: 3px!important;
+}
+.slider-main .owl-dots .active span {
+    background-color: #000!important;
+}
 
 /* Service Main */
 .service-main {
@@ -651,4 +656,63 @@
     width: 100%;
     height: 400px;
     background-color: #0d276b;
+}
+
+
+.menu-mobile {
+    display: none;
+}
+
+/* Code phia tren -> PC, MAY CHIEU, TIVI... */
+
+/* Responsive./Start */
+
+/* 1440px tro xuong -- Desktop */
+@media screen and (max-width: 1440px) {
+    /* Trang minh van on */
+}
+@media screen and (max-width: 1220px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* 1140px tro xuong -- Table */
+@media screen and (max-width: 1140px) {
+    /* Header-bottom */
+    .menu-main {
+        display: none;
+    }
+    .header-bottom .button-menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-mobile button {
+        background-color: #fff;
+        border: none;
+    }
+    .menu-mobile button i {
+        font-size: 20px;
+    }
+
+    /* Service */
+    .service-main .row {
+        margin: 0 -20px;
+    }
+    .service-main .coloumn {
+        padding: 0 20px;
+    }
+    .service-main .coloumn-4 {
+        width: calc(100% / 2);
+    }
+}
+
+
+/* 768px tro xuong --Mobile */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
 }
